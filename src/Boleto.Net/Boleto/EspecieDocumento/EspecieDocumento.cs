@@ -125,6 +125,10 @@ namespace BoletoNet
                     case 237:
                         _IEspecieDocumento = new EspecieDocumento_Bradesco(codigoEspecie);
                         break;
+                    //133 - Cresol
+                    case 133:
+                        _IEspecieDocumento = new EspecieDocumento_Cresol(codigoEspecie);
+                        break;
                     //356 - Real
                     case 356:
                         _IEspecieDocumento = new EspecieDocumento_Real(codigoEspecie);
@@ -214,6 +218,8 @@ namespace BoletoNet
                         return EspecieDocumento_Caixa.CarregaTodas();
                     case 237:
                         return EspecieDocumento_Bradesco.CarregaTodas();
+                    case 133:
+                        return EspecieDocumento_Cresol.CarregaTodas();
                     case 341:
                         return EspecieDocumento_Itau.CarregaTodas();
                     case 347:
@@ -311,6 +317,9 @@ namespace BoletoNet
                     //237 - Bradesco
                     case 237:
                         return new EspecieDocumento_Bradesco().getCodigoEspecieBySigla(sigla);
+                    //133 - Cresol
+                    case 133:
+                        return new EspecieDocumento_Cresol().getCodigoEspecieBySigla(sigla);
                     //356 - Real
                     case 356:
                         return new EspecieDocumento_Real().getCodigoEspecieBySigla(sigla);
@@ -379,12 +388,13 @@ namespace BoletoNet
         
         }
 
-        private static readonly Dictionary<int, AbstractEspecieDocumento> especiesDocumentosBancos = new Dictionary<int, AbstractEspecieDocumento>() {
+        private static Dictionary<int, AbstractEspecieDocumento> especiesDocumentosBancos = new Dictionary<int, AbstractEspecieDocumento>() {
                 { 341, new EspecieDocumento_Itau       ()  },
                 { 479, new EspecieDocumento_BankBoston ()  },
                 { 422, new EspecieDocumento_Safra      ()  },
                 { 1, new EspecieDocumento_BancoBrasil  ()  },
                 { 237, new EspecieDocumento_Bradesco   ()  },
+                { 133, new EspecieDocumento_Cresol     ()  },
                 { 356, new EspecieDocumento_Real       ()  },
                 { 33, new EspecieDocumento_Santander   ()  },
                 { 347, new EspecieDocumento_Sudameris  ()  },

@@ -92,6 +92,10 @@ namespace BoletoNet
 					case 237:
 						_IBanco = new Banco_Bradesco();
 						break;
+					//133 - Cresol
+					case 133:
+						_IBanco = new Banco_Cresol();
+						break;
 					//347 - Sudameris
 					case 347:
 						_IBanco = new Banco_Sudameris();
@@ -176,20 +180,10 @@ namespace BoletoNet
                     case 084:
                         _IBanco = new Banco_Uniprime();
                         break;
-                    case 530:
-                        _IBanco = new Banco_SerFinance();
-                        break;
                     case ((int)Enums.Bancos.Maxima):
                         _IBanco = new Banco_Maxima();
                         break;
-					case ((int)Enums.Bancos.C6Bank):
-						_IBanco = new Banco_C6();
-						break;
-					//77 - Banco Inter
-                    case 77:
-                        _IBanco = new Banco_Inter();
-                        break;
-                    default:
+					default:
 						throw new Exception("Código do banco não implementando: " + codigoBanco);
 				}
 			}
