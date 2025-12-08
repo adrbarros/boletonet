@@ -65,6 +65,10 @@ namespace BoletoNet
                     case 422:
                         _IInstrucao = new Instrucao_Safra();
                         break;
+                    //133 - Cresol
+                    case 133:
+                        _IInstrucao = new Instrucao_Cresol();
+                        break;
                     //237 - Bradesco
                     //707 - Daycoval
                     case 237:

@@ -86,6 +86,10 @@ namespace BoletoNet
                     case 237:
                         //_ICodigoMovimento = new CodigoMovimento_Bradesco();
                         throw new Exception("Código do banco não implementando: " + codigoBanco);
+                    //133 - Cresol
+                    case 133:
+                        //_ICodigoMovimento = new CodigoMovimento_Cresol();
+                        throw new Exception("Código do banco não implementando: " + codigoBanco);
                     //347 - Sudameris
                     case 347:
                         //_ICodigoMovimento = new CodigoMovimento_Sudameris();

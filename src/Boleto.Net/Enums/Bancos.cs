@@ -9,6 +9,7 @@ namespace BoletoNet.Enums
         [Description("041")]
         Banrisul = 041,
         Bradesco = 237,
+        Cresol = 133,
         Caixa = 104,
         Uniprime = 84,
         CECRED = 85,
