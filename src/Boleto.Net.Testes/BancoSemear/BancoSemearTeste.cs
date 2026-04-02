@@ -45,7 +45,7 @@ namespace BoletoNet.Testes.BancoSemear
             boleto.ValorCobrado = 251.51M;
             boleto.NossoNumero = "35148373401";
             boleto.NumeroDocumento = "051483734";
-            boleto.DataVencimento = new DateTime(2017, 12, 4);
+            boleto.DataVencimento = new DateTime(2026, 3, 26);
             boleto.DataProcessamento = DateTime.Now;
             boleto.Carteira = "02";
 
