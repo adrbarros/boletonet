@@ -92,67 +92,67 @@ namespace BoletoNet
                         break;
                     case EnumInstrucoes_Sicoob.CobrarJuros:
                         this.Codigo = (int)EnumInstrucoes_Sicoob.CobrarJuros;
-                        this.Descricao = string.Format("Ap�s vencimento cobrar juros de {0}% ao m�s.", percentualMultaOuJuroAoMes.ToString("F2"));
+                        this.Descricao = string.Format("Após vencimento cobrar juros de {0}% ao mês.", percentualMultaOuJuroAoMes.ToString("F2"));
                         break;
                     case EnumInstrucoes_Sicoob.CobrarTaxaDeMulta:
                         this.Codigo = (int)EnumInstrucoes_Sicoob.CobrarTaxaDeMulta;
-                        this.Descricao = string.Format("Ap�s vencimento cobrar multa de {0}% ao m�s", percentualMultaOuJuroAoMes.ToString("F2"));
+                        this.Descricao = string.Format("Após vencimento cobrar multa de {0}% ao mês", percentualMultaOuJuroAoMes.ToString("F2"));
                         break;
                     case EnumInstrucoes_Sicoob.Protestar3DiasUteis:
                         this.Codigo = (int)EnumInstrucoes_Sicoob.Protestar3DiasUteis;
-                        this.Descricao = "Protestar 3 dias �teis ap�s vencimento";
+                        this.Descricao = "Protestar 3 dias úteis após vencimento";
                         break;
                     case EnumInstrucoes_Sicoob.Protestar4DiasUteis:
                         this.Codigo = (int)EnumInstrucoes_Sicoob.Protestar4DiasUteis;
-                        this.Descricao = "Protestar 4 dias �teis ap�s vencimento";
+                        this.Descricao = "Protestar 4 dias úteis após vencimento";
                         break;
                     case EnumInstrucoes_Sicoob.Protestar5DiasUteis:
                         this.Codigo = (int)EnumInstrucoes_Sicoob.Protestar5DiasUteis;
-                        this.Descricao = "Protestar 5 dias �teis ap�s vencimento";
+                        this.Descricao = "Protestar 5 dias úteis após vencimento";
                         break;
                     case EnumInstrucoes_Sicoob.NaoProtestar:
                         this.Codigo = (int)EnumInstrucoes_Sicoob.NaoProtestar;
-                        this.Descricao = "N�o protestar";
+                        this.Descricao = "Não protestar";
                         break;
                     case EnumInstrucoes_Sicoob.Protestar10DiasUteis:
                         this.Codigo = (int)EnumInstrucoes_Sicoob.Protestar10DiasUteis;
-                        this.Descricao = "Protestar 10 dias �teis ap�s vencimento";
+                        this.Descricao = "Protestar 10 dias úteis após vencimento";
                         break;
                     case EnumInstrucoes_Sicoob.Protestar15DiasUteis:
                         this.Codigo = (int)EnumInstrucoes_Sicoob.Protestar15DiasUteis;
-                        this.Descricao = "Protestar 15 dias �teis ap�s vencimento";
+                        this.Descricao = "Protestar 15 dias úteis após vencimento";
                         break;
                     case EnumInstrucoes_Sicoob.Protestar20DiasUteis:
                         this.Codigo = (int)EnumInstrucoes_Sicoob.Protestar20DiasUteis;
-                        this.Descricao = "Protestar 20 dias �teis ap�s vencimento";
+                        this.Descricao = "Protestar 20 dias úteis após vencimento";
                         break;
                     case EnumInstrucoes_Sicoob.ConcederDescontoApenasAteDataEstipulada:
                         this.Codigo = (int)EnumInstrucoes_Sicoob.ConcederDescontoApenasAteDataEstipulada;
-                        this.Descricao = "Conceder desconto s� at� a data estipulada";
+                        this.Descricao = "Conceder desconto só até a data estipulada";
                         break;
                     case EnumInstrucoes_Sicoob.DevolverApos15DiasVencido:
                         this.Codigo = (int)EnumInstrucoes_Sicoob.DevolverApos15DiasVencido;
-                        this.Descricao = "Devolver ap�s 15 dias vencido";
+                        this.Descricao = "Devolver após 15 dias vencido";
                         break;
                     case EnumInstrucoes_Sicoob.DevolverApos30DiasVencido:
                         this.Codigo = (int)EnumInstrucoes_Sicoob.DevolverApos30DiasVencido;
-                        this.Descricao = "Devolver ap�s 30 dias vencido";
+                        this.Descricao = "Devolver após 30 dias vencido";
                         break;
                     case EnumInstrucoes_Sicoob.ProtestarAposNDiasCorridos:
                         this.Codigo = (int)EnumInstrucoes_Sicoob.ProtestarAposNDiasCorridos;
-                        this.Descricao = string.Format("Protestar {0} dias corridos ap�s vencimento", nrDias);
+                        this.Descricao = string.Format("Protestar {0} dias corridos após vencimento", nrDias);
                         break;
                     case EnumInstrucoes_Sicoob.ProtestarAposNDiasUteis:
                         this.Codigo = (int)EnumInstrucoes_Sicoob.ProtestarAposNDiasUteis;
-                        this.Descricao = string.Format("Protestar {0} dias �teis ap�s vencimento", nrDias);
+                        this.Descricao = string.Format("Protestar {0} dias úteis após vencimento", nrDias);
                         break;
                     case EnumInstrucoes_Sicoob.NegativacaoSemProtesto:
                         this.Codigo = (int)EnumInstrucoes_Sicoob.NegativacaoSemProtesto;
-                        this.Descricao = string.Format("Negativa��o sem protesto ap�s {0} dias", nrDias);
+                        this.Descricao = string.Format("Negativação sem protesto após {0} dias", nrDias);
                         break;
                     case EnumInstrucoes_Sicoob.CancelamentoProtestoNegativacaoAutomatica:
                         this.Codigo = (int)EnumInstrucoes_Sicoob.CancelamentoProtestoNegativacaoAutomatica;
-                        this.Descricao = "Cancelamento de protesto/negativa��o autom�tica";
+                        this.Descricao = "Cancelamento de protesto/negativação automática";
                         break;
                     default:
                         this.Codigo = 0;
