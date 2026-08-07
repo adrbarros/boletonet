@@ -71,8 +71,9 @@ namespace BoletoNet
         {
             try
             {
-                //Carteiras válidas
-                int[] cv = new int[] { 175, 176, 178, 109, 198, 107, 122, 142, 143, 196, 126, 131, 146, 150, 169, 121, 112, 104, 138, 115};//MarcielTorres - adicionado a carteira 112
+                //Carteiras válidas 
+                //MarcielTorres - adicionado a carteira 112 - Felipe Silveira - add 157
+                int[] cv = new int[] { 175, 176, 178, 109, 198, 107, 122, 142, 143, 196, 126, 131, 146, 150, 157, 169, 121, 112, 104, 138, 115};
                 bool valida = false;
 
                 foreach (int c in cv)
@@ -159,7 +160,7 @@ namespace BoletoNet
                 string numeroDocumento = Utils.FormatCode(boleto.NumeroDocumento.ToString(), 7);
                 string codigoCedente = Utils.FormatCode(boleto.Cedente.Codigo.ToString(), 5);
 
-                if (boleto.Carteira == "175" || boleto.Carteira == "176" || boleto.Carteira == "178" || boleto.Carteira == "109" || boleto.Carteira == "115" || boleto.Carteira == "121" || boleto.Carteira == "112" || boleto.Carteira == "104" || boleto.Carteira == "138")//MarcielTorres - adicionado a carteira 112
+                if (boleto.Carteira == "175" || boleto.Carteira == "176" || boleto.Carteira == "178" || boleto.Carteira == "109" || boleto.Carteira == "115" || boleto.Carteira == "121" || boleto.Carteira == "112" || boleto.Carteira == "104" || boleto.Carteira == "138" || boleto.Carteira == "157")//MarcielTorres - adicionado a carteira 112
                 {
                     boleto.CodigoBarra.Codigo =
                         string.Format("{0}{1}{2}{3}{4}{5}{6}{7}{8}{9}000", Codigo, boleto.Moeda,
@@ -229,7 +230,7 @@ namespace BoletoNet
 
                 #endregion UUUUVVVVVVVVVV
 
-                if (boleto.Carteira == "175" || boleto.Carteira == "176" || boleto.Carteira == "178" || boleto.Carteira == "109" || boleto.Carteira == "115" || boleto.Carteira == "121" || boleto.Carteira == "112" || boleto.Carteira == "104" || boleto.Carteira == "138")//MarcielTorres - adicionado a carteira 112
+                if (boleto.Carteira == "175" || boleto.Carteira == "176" || boleto.Carteira == "178" || boleto.Carteira == "109" || boleto.Carteira == "115" || boleto.Carteira == "121" || boleto.Carteira == "112" || boleto.Carteira == "104" || boleto.Carteira == "138" || boleto.Carteira == "157")//MarcielTorres - adicionado a carteira 112
                 {
                     #region Definições
                     /* AAABC.CCDDX.DDDDD.DEFFFY.FGGGG.GGHHHZ.K.UUUUVVVVVVVVVV
